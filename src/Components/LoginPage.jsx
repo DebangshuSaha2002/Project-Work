@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import videoBG from "./Videos/pexels_videos_1394254 (1440p).mp4";
+import { useNavigate } from "react-router-dom";
 const LoginPage = () => {
+  const navigate = useNavigate();
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
   const [driverId, setDriverId] = useState("");
@@ -15,6 +17,7 @@ const LoginPage = () => {
       driverId === "10"
     ) {
       setMessage("Success!");
+      navigate("/Buttons");
     } else {
       setMessage("Please enter the details correctly!");
     }
