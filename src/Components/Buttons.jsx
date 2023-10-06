@@ -1,6 +1,9 @@
 import React from "react";
 import background from "./Images/Bg.jpg";
 function App() {
+  const DrowsinessDetection = () => {
+    window.location.href = "http://localhost:8501/";
+  };
   return (
     <div>
       <div className="m-0 p-0 w-[100%] h-[100vh] ">
@@ -17,7 +20,10 @@ function App() {
                 <h2 className="text-xl font-semibold mb-2 font-Montagu">
                   Drowsiness Detection
                 </h2>
-                <button className="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded-full transition duration-300 transform hover:scale-105 focus:outline-none">
+                <button
+                  onClick={DrowsinessDetection}
+                  className="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded-full transition duration-300 transform hover:scale-105 focus:outline-none "
+                >
                   Start
                 </button>
               </div>
