@@ -48,7 +48,7 @@ function App() {
               </div>
               <div className="mr-[10rem] bg-white p-6 rounded-lg shadow-md">
                 <h2 className="text-xl font-semibold mb-2 font-Montagu">
-                  Smoke & Cellphone Detection
+                  Cellphone Detection
                 </h2>
                 <button
                   onClick={SmokeandCellphoneDetection}
